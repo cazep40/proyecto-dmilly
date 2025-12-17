@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D´Milly Detalles | Tazas Navideñas</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Animación suave del logo */
+        .logo-anim {
+            animation: fadeSlide 1s ease-out forwards;
+        }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
+            <!-- LOGO + NOMBRE -->
+            <div class="flex items-center gap-4 logo-anim">
+                <img src="logo-web.png" alt="D´Milly Detalles" class="h-16 md:h-24 w-auto" />
+                <div class="leading-tight">
+                    <h1 class="text-lg md:text-2xl font-semibold">
+                        D´Milly Detalles
+                    </h1>
+                    <p class="text-xs md:text-sm text-pink-500 font-medium">
+                        Detalles que enamoran
+                    </p>
+                </div>
+            </div>
+
+            <!-- NAV -->
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#catalogo" class="hover:text-pink-500">Catálogo</a>
+                <a href="#contacto" class="hover:text-pink-500">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-gradient-to-r from-pink-100 to-purple-100">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Tazas Sublimadas Navideñas
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-600">
+                Regalos personalizados con amor para esta Navidad 🎄
+            </p>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="max-w-7xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-semibold mb-8 text-center">
+            Catálogo de Tazas
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/1.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 01</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/1.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/2.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 02</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/2.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/3.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 03</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/3.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/4.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 04</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/4.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/5.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 05</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/5.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/6.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 06</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/6.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/7.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 07</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/7.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/8.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 08</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/8.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                <img src="./img/9.png" alt="Taza Navideña 01"
+                    class="w-full h-auto object-contain cursor-pointer bg-white" onclick="openModal(this.src)" />
+
+                <div class="p-4">
+                    <h4 class="font-semibold mb-3 text-center">Taza Navideña 09</h4>
+
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="./video/9.mp4" type="video/mp4" />
+                    </video>
+
+                    <a href="https://wa.me/51943776717" target="_blank"
+                        class="block text-center bg-pink-500 text-white py-2 rounded-xl font-medium hover:bg-pink-600 transition">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- DUPLICAR ESTA CARD PARA LAS 15 TAZAS -->
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-pink-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+            <h3 class="text-2xl font-semibold mb-4">
+                ¿Deseas personalizar tu taza?
+            </h3>
+            <p class="mb-6">
+                Iniciales, nombres o fotos de personas especiales
+            </p>
+
+            <a href="https://wa.me/51943776717" target="_blank"
+                class="bg-white text-pink-500 px-6 py-3 rounded-xl font-medium hover:bg-pink-100 transition">
+                Contáctanos por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-8 text-center text-sm">
+            <p>© 2025 D´Milly Detalles · Detalles que enamoran</p>
+            <p class="mt-2">Diseño por VZ - Valeria Zeña - Diseñador Gráfico</p>
+        </div>
+    </footer>
+
+    <!-- MODAL IMAGEN -->
+    <div id="modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50" onclick="closeModal()">
+        <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-xl shadow-lg" />
+    </div>
+
+    <!-- JS -->
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modal').classList.remove('hidden');
+            document.getElementById('modal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.getElementById('modal').classList.remove('flex');
+        }
+    </script>
+
+</body>
+
+</html>
